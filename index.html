@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <table>
+          <tr>
+            <td colspan="4">
+              <input type="text" id="display" readonly placeholder="0" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td>
+              <input type="button" value="Clear" onclick="clearValue()" />
+            </td>
+            <td>
+              <input type="button" value="x" onclick="getBackspace()" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="1" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input type="button" value="2" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input type="button" value="3" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                onclick="getOperatorValue(this.value)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="4" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input type="button" value="5" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input type="button" value="6" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="-"
+                onclick="getOperatorValue(this.value)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="7" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input type="button" value="8" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input type="button" value="9" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="*"
+                onclick="getOperatorValue(this.value)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="0" onclick="getValue(this.value)" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="."
+                onclick="getOperatorValue(this.value)"
+              />
+            </td>
+            <td colspan="2">
+              <input type="button" value="=" onclick="getResult()" />
+            </td>
+          </tr>
+        </table>
+        <p class="copyright">
+          &copy
+          <a href="https://github.com/mehedimd"
+            ><strong>Md. Mehedi Hasan</strong></a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
